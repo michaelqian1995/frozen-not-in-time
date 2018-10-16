@@ -1,9 +1,41 @@
 html {
-  font-family: "Fredoka One", cursive;
+  font-family: "Fredoka One", sans-serif;
 }
 
-body {
+.background {
   background: repeating-linear-gradient(135deg, #c9fcff 25%, #d4fdff 0,#d4fdff 50%,#c9fcff 0%,#c9fcff 75%,#d4fdff 0);
+  height: 30em;
+  position: relative;
+}
 
-  background-size:30px 30px;}
+h1 {
+  color: #990073;
+  position: absolute;
+  transform: rotate(-14deg) translate(.7em, 1.2em);
+  animation: message .5s .8s forwards;
+}
+
+p {
+  color: #c09;
+  position: absolute;
+  transform: rotate(-10deg) translate(2em, 6em);
+  max-width: 19em;
+  animation: message .5s .8s forwards;
+}
+
+a {
+  position: absolute;
+  transform: translate(4em,14em);
+  animation: message .5s .8s forwards;
+}
+
+.btn {
+  text-decoration: none;
+  color: #c09;
+}
+
+.btn-ghost {
+  border: solid 4px #990073;
+  padding: .5em 1em;
+  border-radius: 2px;
 }
